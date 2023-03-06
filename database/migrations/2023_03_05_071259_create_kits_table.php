@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('kits', function (Blueprint $table) {
-            $table->id('id_kit');
+            $table->id('id_kit')->AUTO_INCREMENT;
             $table->string('nom_kit');
             $table->string('descripcion');
         });
